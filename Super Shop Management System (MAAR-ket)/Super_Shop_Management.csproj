@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B65A433-F498-4E85-AAED-601D6F49269A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Super_Shop_Management</RootNamespace>
+    <AssemblyName>Super Shop Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Context" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_itemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_itemInfo.Designer.cs">
+      <DependentUpon>Admin_itemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_empInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_empInfo.Designer.cs">
+      <DependentUpon>Admin_empInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cus_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cus_History.Designer.cs">
+      <DependentUpon>Cus_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_custInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_custInfo.Designer.cs">
+      <DependentUpon>Emp_custInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_itemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_itemInfo.Designer.cs">
+      <DependentUpon>Emp_itemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerView.Designer.cs">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_verification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cust_verification.Designer.cs">
+      <DependentUpon>Cust_verification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration_Form.designer.cs">
+      <DependentUpon>Registration_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_page.Designer.cs">
+      <DependentUpon>Login_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Support.Designer.cs">
+      <DependentUpon>Support.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_itemInfo.resx">
+      <DependentUpon>Admin_itemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_empInfo.resx">
+      <DependentUpon>Admin_empInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cus_History.resx">
+      <DependentUpon>Cus_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_custInfo.resx">
+      <DependentUpon>Emp_custInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_itemInfo.resx">
+      <DependentUpon>Emp_itemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerView.resx">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cust_verification.resx">
+      <DependentUpon>Cust_verification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration_Form.resx">
+      <DependentUpon>Registration_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_page.resx">
+      <DependentUpon>Login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Support.resx">
+      <DependentUpon>Support.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_name1.png" />
+    <None Include="Resources\rice.jpg" />
+    <None Include="Resources\Spices.jpg" />
+    <None Include="Resources\MAAR ket2.png" />
+    <None Include="Resources\MAAR ket.png" />
+    <None Include="Resources\icon.png" />
+    <None Include="Resources\beverage.jpg" />
+    <None Include="Resources\egg.png" />
+    <None Include="Resources\fruits-vegetables-chalk-white-icon-260nw-1709143813.png" />
+    <None Include="Resources\Meat.jpg" />
+    <None Include="Resources\Milk.png" />
+    <None Include="Resources\Oil.jpg" />
+    <None Include="Resources\Mik and beverages.png" />
+    <None Include="Resources\dal.png" />
+    <None Include="Resources\Download.jpg" />
+    <Content Include="Resources\password-icon-png-13.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
